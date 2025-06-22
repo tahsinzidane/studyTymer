@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#1e1e2f" />
+    <meta name="author" content="Tahsin Zidane" />
+    <meta name="description"
+        content="A clean and focused study timer with custom durations, sound alerts, and auto-switching between work and break modes." />
+    <meta name="keywords" content="study timer, pomodoro, focus app, productivity, custom timer, break reminder" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Study Timer – Stay Focused & Productive" />
+    <meta property="og:description"
+        content="A modern and minimal study timer with smart break cycles and sound alerts." />
+    <meta property="og:image" content="https://i.pinimg.com/736x/70/e2/65/70e265b8f90be50058abe5eb886e3e4c.jpg" />
+    <meta property="og:url" content="https://yourdomain.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Study Timer – Stay Focused & Productive" />
+    <meta name="twitter:description"
+        content="Customizable study sessions, break automation, and sound alerts to power your productivity." />
+    <meta name="twitter:image" content="https://i.pinimg.com/736x/70/e2/65/70e265b8f90be50058abe5eb886e3e4c.jpg" />
+
+
+
+    <title>CtrlTime | study tymer</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="shortcut icon" href="https://img.icons8.com/3d-fluency/94/books.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="app">
+        <header class="app-header">
+            <h1>CtrlTime</h1>
+            <a href="https://github.com/tahsinzidane" target="_blank" rel="noopener">
+                <i class="ri-github-fill"></i>
+            </a>
+        </header>
+
+        <div class="mode-tabs">
+            <button id="tab-study" class="active">Study</button>
+            <button id="tab-short">Short Break</button>
+            <button id="tab-long">Long Break</button>
+        </div>
+
+        <main class="mode-container">
+
+            <section id="study" class="mode-section active">
+                <div class="timer-display" id="studyDisplay">25:00</div>
+                <div class="controls">
+                    <button id="startStudy"><i class="ri-play-fill"></i></button>
+                    <button id="pauseStudy"><i class="ri-pause-line"></i></button>
+                    <button id="resumeStudy"><i class="ri-play-circle-line"></i></button>
+                    <button id="resetStudy"><i class="ri-restart-line"></i></button>
+                </div>
+                <div class="duration-set">
+                    <label>Study Duration (min):
+                        <input type="number" id="inputStudy" value="25" min="1" />
+                    </label>
+                </div>
+            </section>
+
+            <section id="short" class="mode-section">
+                <div class="timer-display" id="shortDisplay">05:00</div>
+                <div class="controls">
+                    <button id="startShort"><i class="ri-play-fill"></i></button>
+                    <button id="pauseShort"><i class="ri-pause-line"></i></button>
+                    <button id="resumeShort"><i class="ri-play-circle-line"></i></button>
+                    <button id="resetShort"><i class="ri-restart-line"></i></button>
+                </div>
+                <div class="duration-set">
+                    <label>Short Break (min):
+                        <input type="number" id="inputShort" value="5" min="1" />
+                    </label>
+                </div>
+            </section>
+
+            <section id="long" class="mode-section">
+                <div class="timer-display" id="longDisplay">15:00</div>
+                <div class="controls">
+                    <button id="startLong"><i class="ri-play-fill"></i></button>
+                    <button id="pauseLong"><i class="ri-pause-line"></i></button>
+                    <button id="resumeLong"><i class="ri-play-circle-line"></i></button>
+                    <button id="resetLong"><i class="ri-restart-line"></i></button>
+                </div>
+                <div class="duration-set">
+                    <label>Long Break (min):
+                        <input type="number" id="inputLong" value="15" min="1" />
+                    </label>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>

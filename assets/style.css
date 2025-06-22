@@ -1,0 +1,118 @@
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ body {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-color: #1e1e2f;
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   padding: 20px;
+ }
+
+ .app {
+   width: 100%;
+   max-width: 500px;
+ }
+
+ .app-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 20px;
+ }
+
+ .app-header h1 {
+   font-size: 24px;
+   color: #00ffe5;
+ }
+
+ .app-header a {
+   color: #fff;
+   font-size: 24px;
+ }
+
+ .mode-tabs {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+ }
+
+ .mode-tabs button {
+   flex: 1;
+   padding: 10px;
+   border: none;
+   background-color: #333;
+   color: #fff;
+   font-size: 16px;
+   cursor: pointer;
+   transition: 0.2s;
+ }
+
+ .mode-tabs button.active {
+   background-color: #00ffe5;
+   color: #000;
+   font-weight: bold;
+ }
+
+ .mode-container {
+   background-color: #2c2c3e;
+   border-radius: 10px;
+   padding: 30px 20px;
+   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+ }
+
+ .mode-section {
+   display: none;
+   text-align: center;
+ }
+
+ .mode-section.active {
+   display: block;
+ }
+
+ .timer-display {
+   font-size: 64px;
+   margin-bottom: 25px;
+ }
+
+ .controls {
+   margin-bottom: 20px;
+ }
+
+ .controls button {
+   background-color: #444;
+   color: #fff;
+   border: none;
+   padding: 12px 18px;
+   margin: 0 5px;
+   font-size: 20px;
+   border-radius: 8px;
+   cursor: pointer;
+   transition: 0.2s ease-in-out;
+ }
+
+ .controls button:hover {
+   background-color: #666;
+ }
+
+ .duration-set label {
+   font-size: 14px;
+   display: block;
+   margin-top: 10px;
+ }
+
+ .duration-set input {
+   width: 70px;
+   padding: 5px;
+   margin-top: 5px;
+   border: none;
+   border-radius: 4px;
+   font-size: 16px;
+   text-align: center;
+ }
